@@ -19,7 +19,7 @@ public class PaymentService {
 
     public List<Payment> getAllPayments() {
         try {
-            return paymentRepository.findAll();
+            return paymentRepository.findAll()
         } catch (Exception e) {
             // Log the exception or handle it as needed
             e.printStackTrace(); // Example: Print stack trace for debugging
